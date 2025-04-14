@@ -1,0 +1,9 @@
+﻿@model CrudAdoApp.Models.Student
+
+<h2>@ViewContext.RouteData.Values["action"] Student</h2>
+<form method="post">
+    <label>Name:</label> <input asp-for="Name" /><br />
+    <label>Email:</label> <input asp-for="Email" /><br />
+    <label>Age:</label> <input asp-for="Age" /><br />
+    <button type="submit">Save</button>
+</form>
